@@ -1,0 +1,35 @@
+type,value,context,status
+sha256,a8513f37db3089424693c687a3c64c03f36faa47d861abd0162c9bcb942c6a1f,Rust loader (LPE + eBPF rootkit + miner dropper),verified
+sha256,3774efe15677759c0f665df94455f8ecaf58bda6f288cb6394d100e5893c3f79,XMRig embedded in the loader,verified
+sha256,31eb9db333129f588baf5c1d5e7e7da119db0d1ff502da95408ef8d5a7e19f97,Bot dropped as /var/tmp/kworker by a separate actor,verified
+sha256,c97d0ee1a7a8ca7c82dab3e584b5c423cf2098279dab551ab2be90fece282294,Spider DDoS bot (32-bit build),reported
+ipv4,91.92.40.202,Plex2Shell exploit source at both root escalations,verified
+ipv4-port,91.92.40.202:40175,Outbound from the loader,reported
+ipv4-port,94.26.35.142:53535,Outbound from the miner,reported
+domain-port,hello.itsmybirthdaytoday.pw:53535,Mining endpoint in loader configuration,verified
+ipv4-port,213.218.160.252:53535,Mining endpoint in loader configuration,verified
+ipv4-port,196.251.121.188:53535,Mining endpoint in loader configuration,verified
+domain-port,pool.hashvault.sh:443,Public pool in loader configuration,verified
+domain-port,pool.hashvault.pro:443,Public pool in loader configuration,verified
+domain-port,mine.c3pool.com:13333,Public pool in loader configuration,verified
+domain-port,xmr.kryptex.network:7029,Public pool in loader configuration,verified
+domain-port,xmr-eu.kryptex.network:7029,Public pool in loader configuration,verified
+domain-port,gulf.moneroocean.stream:10004,Public pool in loader configuration,verified
+xmr-wallet,83kPPGNWwFv7BRCPQN9UuuSnKL2W5UWviJeRTKFcvdunA9EAdjhCxcr6iTtTdcphuo55JjN2a5p5cjee9PZzTzrzArw1xCU,Operator wallet in loader configuration,verified
+ipv4,217.60.194.116,Dropper host of a separate actor (HTTP paths /plex /x /docker),verified
+ipv4,77.90.185.205,Dropper host of a separate actor (HTTP paths /m/sh /m/wee),verified
+url,http://217.60.194.116/plex,Dropper URL,verified
+url,http://217.60.194.116/x,Dropper URL,verified
+url,http://217.60.194.116/docker,Dropper URL,verified
+url,http://77.90.185.205/m/sh,Dropper URL,verified
+url,http://77.90.185.205/m/wee,Dropper URL,verified
+domain-port,ota.proxystream.st:3333,Stratum endpoint of a second miner,verified
+ipv4,94.154.43.7,Automated exploit source seen by the honeypot,reported
+ipv4-port,94.154.43.68:48180,Spider bot control,reported
+domain,hand.genddos.st,Spider bot control,reported
+ipv4,45.194.92.222,Exploit source,reported
+filename,/var/tmp/kworker,Bot binary of a separate actor,verified
+filename,/var/tmp/kworker.sh,Bot launcher of a separate actor (contains SPIDER_NAME),verified
+filename,/tmp/.pxb,Staging directory with private copies of curl and wget,verified
+string,# gpu-runtime-overlay,Marker of LD_PRELOAD persistence in shell startup files,verified
+string,Description=System Management Daemon,Description of the loader persistence unit,verified

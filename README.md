@@ -188,6 +188,19 @@ No malware binaries, no packet captures, no decrypted payloads. The report
 gives the hashes, plus the key and nonce that decrypt the loader's embedded
 content, for analysts who hold the same sample.
 
+## License
+
+Use anything here as you like, including commercially and in modified form.
+The one condition is that you credit the original author.
+
+| What | License | File |
+| --- | --- | --- |
+| Code: `tools/` and `rules/` | MIT | [`LICENSE`](LICENSE) |
+| Text and data: `README.md`, `REPORT.md`, `iocs/` | Creative Commons Attribution 4.0 (CC BY 4.0) | [`LICENSE-CC-BY-4.0.txt`](LICENSE-CC-BY-4.0.txt) |
+
+Suggested credit: "Hugo L. Espuny, *Plex2Shell to Root*,
+https://github.com/fakehec/plex2shell-to-root".
+
 ## Contact
 
 Hugo L. Espuny, [github.com/fakehec](https://github.com/fakehec). Corrections

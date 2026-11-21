@@ -73,6 +73,13 @@ You are exposed to the same chain if both of these are true:
 Any other remote code execution bug would serve as the first step just as
 well. The loader is not tied to Plex.
 
+## Also on abuse.ch
+
+- MalwareBazaar: the loader was already listed (first seen 22 October 2026, from another reporter); the embedded
+  XMRig was added with this analysis. Search by the hashes in `iocs/iocs.csv`.
+- ThreatFox: the operator's mining endpoints are listed under `elf.xmrig`.
+- YARAify: the five rules are deployed for live hunting under the same rule names.
+
 ## Check a host
 
 The loader does not use a fixed file name. It computes its names from

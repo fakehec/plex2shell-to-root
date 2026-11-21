@@ -8,6 +8,12 @@
 rule Plex2Shell_Rust_Loader
 {
     meta:
+        yarahub_reference_link = "https://github.com/fakehec/plex2shell-to-root"
+        yarahub_reference_md5 = "3d94f422889630e3fb753ba961a45caa"
+        yarahub_uuid = "74d38334-75f5-4b5a-a13c-f6bca1856882"
+        yarahub_license = "CC BY 4.0"
+        yarahub_rule_matching_tlp = "TLP:WHITE"
+        yarahub_rule_sharing_tlp = "TLP:WHITE"
         description = "Rust loader with embedded LPE, eBPF rootkit and XMRig"
         author = "Hugo L. Espuny"
         reference = "https://github.com/fakehec"
@@ -38,6 +44,12 @@ rule Plex2Shell_Rust_Loader
 rule Plex2Shell_Preload_Library
 {
     meta:
+        yarahub_reference_link = "https://github.com/fakehec/plex2shell-to-root"
+        yarahub_reference_md5 = "5769030e058ef425b9794a0e5976f0da"
+        yarahub_uuid = "cbbbb419-1f21-4c3d-958b-41c202fd6aee"
+        yarahub_license = "CC BY 4.0"
+        yarahub_rule_matching_tlp = "TLP:WHITE"
+        yarahub_rule_sharing_tlp = "TLP:WHITE"
         description = "LD_PRELOAD fallback rootkit embedded in the loader"
         author = "Hugo L. Espuny"
         date = "2026-11-21"
@@ -55,6 +67,12 @@ rule Plex2Shell_Preload_Library
 rule Plex2Shell_Su_Root_Shell_Payload
 {
     meta:
+        yarahub_reference_link = "https://github.com/fakehec/plex2shell-to-root"
+        yarahub_reference_md5 = "83720fa0d411c8a42ce18adaa29ba152"
+        yarahub_uuid = "eecc9886-c989-4ab6-abd6-28cf66d6ed6f"
+        yarahub_license = "CC BY 4.0"
+        yarahub_rule_matching_tlp = "TLP:WHITE"
+        yarahub_rule_sharing_tlp = "TLP:WHITE"
         description = "184-byte ELF written over the cached image of su: setgid, setuid, setgroups, execve /bin/sh"
         author = "Hugo L. Espuny"
         date = "2026-11-21"
@@ -71,6 +89,12 @@ rule Plex2Shell_Su_Root_Shell_Payload
 rule Plex2Shell_Loader_Persistence_Unit
 {
     meta:
+        yarahub_reference_link = "https://github.com/fakehec/plex2shell-to-root"
+        yarahub_reference_md5 = "e26c44d772e754f99327ffd03d6915f5"
+        yarahub_uuid = "9b169f68-a0b2-483f-9ee5-0f0a81c47fd2"
+        yarahub_license = "CC BY 4.0"
+        yarahub_rule_matching_tlp = "TLP:WHITE"
+        yarahub_rule_sharing_tlp = "TLP:WHITE"
         description = "systemd unit installed by the loader"
         author = "Hugo L. Espuny"
         date = "2026-11-21"
@@ -87,6 +111,12 @@ rule Plex2Shell_Loader_Persistence_Unit
 rule Plex2Shell_eBPF_Rootkit_Object
 {
     meta:
+        yarahub_reference_link = "https://github.com/fakehec/plex2shell-to-root"
+        yarahub_reference_md5 = "0ab2a0980ecf5a82de592a7bd32d0d63"
+        yarahub_uuid = "50f6d234-03b2-4ac7-8239-e8508800c283"
+        yarahub_license = "CC BY 4.0"
+        yarahub_rule_matching_tlp = "TLP:WHITE"
+        yarahub_rule_sharing_tlp = "TLP:WHITE"
         description = "Decrypted eBPF objects of the loader rootkit: hide_files, hide_pid, anti_ptrace, protect_signal, ghost, cleaner"
         author = "Hugo L. Espuny"
         date = "2026-11-21"

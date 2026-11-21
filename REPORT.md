@@ -22,6 +22,8 @@ The escalation was first treated as an unproven theory because no exploit artifa
 
 Three unrelated actors were exploiting the same Plex flaw on the host during the same days. Only one of them escalated.
 
+This was a campaign, not a targeted intrusion. The same loader and the same third-party bot were submitted to MalwareBazaar by another reporter on 22 October 2026, 22 seconds apart, and the operator's mining domain was listed on ThreatFox on 28 October. At least one other host was reached by the same two operations.
+
 ## Scope and method
 
 The analysis is read-only and static: no malware sample was executed at any point. Evidence came from the incident archive kept by the responders plus the retained system logs of the affected host.
